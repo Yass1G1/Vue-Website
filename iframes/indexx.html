@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Yassine's CV</title>
+        <link rel="stylesheet" type="text/css" href="style2.css" />
+        <link rel="shortcut icon" href="Flavicon/icone.ico">
+    </head>
+    <body>
+        <!-- PARTIE SUPERIEURE -->
+        <header>
+            <div id="topbar">
+                <div class="photo">
+                    <a href="Photos/Avatar.svg"><img src="Photos/Avatarmini(1).jpg" alt="Yassine Chouiti" title="Yassine Chouiti" /></a>
+                </div>
+                <div class="nom">
+                    <h1>Yassine <br /> Chouiti</h1>
+                </div>
+                <div class="contact">
+                    <ul id="list1">
+                        <li id="house"><a href="https://www.google.fr/maps/">Adresse</a></li>
+                        <li id="phone">Téléphone</li>
+                        <li id="mail"><a href="mailto:">Mail</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- CORPS DU CV -->
+        <div id="cvbody">
+
+            <!-- DIPLOMES -->
+            <section>
+                <div id="diploma">
+                    <div class="icones">
+                        <img src="Icons/diploma(1).png" alt="diplomes">
+                    </div>
+                    <!-- Click in div : show div | Double Click in div : hide div -->
+                    <div class="titledrop" onclick="document.getElementById('drop-1').style.display = 'block'" ondblclick="document.getElementById('drop-1').style.display = 'none'">
+                        <h2><strong>DIPLOMES</strong><h2>
+                        <div id="drop-1">
+                            <p class="txthgt"><strong>Brevet des collèges |</strong> <span>Collège Béatus Rhenanus - 2020</span></p>
+                            <p>Mention Très bien <br /> Mention Langue Régionale</p>
+                            <!-- FAIRE LE LINK VERS LA CERTIF ET ENELVER LA COMPETENCE ANGLAIS -->
+                            <p class="txthgt"><strong><a href="certif_eng.pdf">Certification CEFR Anglais |</a></strong> <span>British Council - 2021</span></p>
+                            <p>Niveau CEFR C1</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCES -->
+            <section>
+                <div id="xp">
+                    <div class="icones"><img src="Icons/experiences.png" alt="Icone qui représente l'expérience"></div>
+                    <!-- Click in div : show div | Double Click in div : hide div -->
+                    <div class="titledrop" onclick="document.getElementById('drop-2').style.display = 'block'" ondblclick="document.getElementById('drop-2').style.display = 'none'">
+                        <h2 ><strong>EXPERIENCES</strong></h2>
+                        <div id="drop-2">
+                            <p class="txthgt"><strong>Stage de découverte professionnelle |</strong> <span>BT Formation - 2019</span></p>
+                            <p>Réparation de matériel informatique au sein d'une entreprise</p>
+                            <p><strong>Membre du conseil municipal des enfants |</strong> <span>Sélestat - 2014 / 2016</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COMPETENCES -->
+            <section>
+                <div id="skills">
+                    <div class="icones">
+                        <img id="1" src="Icons/experience.png" alt="Icone qui représente les compétences">
+                    </div>
+                    <!-- Click in div : show div | Double Click in div : hide div -->
+                    <div class="titledrop" onclick="document.getElementById('drop-3').style.display = 'block'" ondblclick="document.getElementById('drop-3').style.display = 'none'">
+                        <h2><strong>COMPETENCES</strong></h2>
+                        <div id="drop-3">
+                            <ul>
+                                <li>Bases en sécurité informatique</li>
+                                <li>Bases en programmation logicielle</li>
+                                <li>Niveau intérmédiaire en développement web</li>
+                                <li>Word, Powerpoint</li>
+                                <li><a href="certif_eng.pdf">Maîtrise de l'anglais (Niveau C1)</a>, bases en Allemand</li>
+                                <li>Dactylographie (+90 mots par minute)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACTIVITES -->
+            <section>
+                <div id="hobbys">
+                    <div class="icones"><img src="Icons/more.png" alt="activités"></div>
+                    <!-- Click in div : show div | Double Click in div : hide div -->
+                    <div class="titledrop" onclick="document.getElementById('drop-4').style.display = 'block'" ondblclick="document.getElementById('drop-4').style.display = 'none'">
+                        <h2><strong>ACTIVITES</strong></h2>
+                        <div id="drop-4">
+                            <ul>
+                                <li><strong>Informatique :</strong> Matériel et logiciel</li>
+                                <li><strong>Sport :</strong> Arts martiaux, cyclisme</li>
+                                <li><strong>Instrument de musique :</strong>  Piano</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

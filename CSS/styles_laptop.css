@@ -1,0 +1,759 @@
+/* ------------------ POLICES ------------------ */
+
+/* --------- Gameplay --------- */
+@font-face {
+    font-family: 'gameplay' ;
+    src: url('../Fonts/gameplay/Gameplay.ttf') format('opentype');
+}
+
+/* --------- M04 --------- */
+@font-face {
+    font-family: 'm04' ;
+    src: url('../Fonts/m04/m04.TTF') format('opentype');
+}
+
+/* --------- Gamer --------- */
+@font-face {
+    font-family: 'gamer';
+    src: url('../Fonts/gamer_2/Gamer.ttf') format('opentype');
+}
+
+/* --------- Bitwise --------- */
+@font-face {
+    font-family: 'bitwise';
+    src: url('../Fonts/bitwise/bitwise.ttf') format('opentype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'gamer';
+    margin: 0;
+    background-color: #F3F3F3;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* --------- PARTIE SUPERIEUR (TOP BAR) --------- */
+
+#topbar header {
+    display: inline-flex;
+    background-color: #131921;/* rgb(235, 235, 235);*/
+
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin: 0px;
+    
+    height: 7em;
+
+    box-shadow: 0px 0px 1em black ;
+
+    border-bottom: solid 0.5em #232F3E;
+}
+
+
+/* ------ MAIN LOGO ------ */
+div#boximg {
+    height: 100%;
+    margin: 0 3%;
+}
+
+#mainlogo {
+    height: 70%;
+    margin: 1em 3em;
+    
+}
+
+/* ------ NAV MENU ------ */
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    font-size: 2.5em;
+    
+    margin-top: 0.7em;
+    width: 100%;
+
+}
+
+nav li {
+    padding: 0 1em;
+}
+
+li>a {
+    text-decoration: none;
+    color: #FEFEFE;
+    transition: 150ms;
+    
+}
+
+nav li>a:hover {
+    animation: cligno alternate-reverse infinite 350ms;
+}
+
+@keyframes cligno {
+    from {
+        text-shadow: 0 0 1px;
+        color: rgb(255, 255, 255);
+    }
+    to {
+        text-shadow: 0 0 10px;
+        color: rgb(0, 128, 0);
+    }
+}
+
+li>a#active {
+    color: #7DD856;
+    text-shadow: 0px 0px 10px #247900;
+}
+
+/* bouton (choix de langue) */
+#langbutton {
+    font-family: "gamer";
+    font-size: 3em;
+    width: 5%;
+    height: fit-content;
+    padding: 0.4% 0.5% 0.6%;
+    margin: 0.8% 1% 0;
+
+    background-color: #007F36;
+    color: #131921;
+    border: #131921 solid;
+    border-radius: 10px 10px 10px;
+    transition: 150ms;
+}
+
+#langbutton:hover {
+    color: #FEFEFE;
+    transition: 150ms;
+}
+
+#langbutton:active {
+    background-color: #007F36;
+    color: #131921;
+    transition: 150ms;
+}
+
+/* --------- FOOTER (BARRE INFERIEUR) ---------- */
+#botbar {
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+    height: 3.2em;
+    background-color: #131921;
+    color: #FEFEFE;
+
+    text-align: center;
+    font-size: 3em;
+}
+
+ /* --------------- INDEX (ACCUEIL) --------------- */
+
+/* --------- PREMIERE SECTION --------- */
+div#section1 {
+    position: relative;
+    display: flex;
+    padding: 7% 5% 10%;
+    color: black;
+
+    z-index: 0;
+    /* gradient */
+    background: rgb(243, 243, 243);
+   /* background: -moz-linear-gradient(90deg, #7DD856 0%, rgba(243,243,243,1) 55%);
+    background: -webkit-linear-gradient(90deg, #7DD856 0%, rgba(243,243,243,1) 55%);
+    background: linear-gradient(90deg, #7DD856 0%, rgba(243,243,243,1) 55%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3f3f3",endColorstr="#1e7909",GradientType=1); 
+    */
+}
+
+#section1 #article1 {
+    width: 50%;
+    font-size: 1.5em;
+    font-family: 'gameplay'; 
+    text-shadow: 0px 0px 10em rgba(0, 0, 0, 0.37);
+}
+
+#section1 #imgdino1 {
+    width: 50%;
+}
+
+#imgdino1>img {
+    position: relative;
+    width: 80%;
+    left: 20%;
+}
+
+/* ----- divider (entre section 1 et 2) ----- */
+.sep11 {
+    transform: translateY(-70%) translateY(1px) scale(1,1);
+    transform-origin: top;
+    z-index: 999;
+}
+
+.dark-blue {
+    background-color:#22313f;
+}
+
+#divider1 {
+    height: 20px;
+    z-index: 999;
+
+}
+
+
+/* --------- DEUXIEME SECTION --------- */
+#corps2 {
+    margin-bottom: 0;
+}
+
+div#section2 {
+    position: relative;
+    display: flex;
+    padding: 3% 5% 9%;
+    color: white;
+
+    background: rgb(34, 49, 63);
+    /* gradient */
+    /*background: -moz-linear-gradient(90deg, rgba(243,243,243,1) 42%, #7DD856 100%);
+    background: -webkit-linear-gradient(90deg, rgba(243,243,243,1) 42%, #7DD856 100%);
+    background: linear-gradient(90deg, rgba(243,243,243,1) 42%, #7DD856 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3f3f3",endColorstr="#7DD856",GradientType=1); */
+     
+}
+
+/* ----- TEXTE SECTION 2 ----- */
+#section2 #article2 {
+    width: 60%;
+    font-size: 1.5em;
+    font-family: 'gameplay'; 
+    text-shadow: 0px 0px 10em rgba(0, 0, 0, 0.37);
+}
+
+/* ----- IMAGES SECTION 2 ----- */
+#section2 #imgs2 {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 5%;
+    padding: 0;
+}
+
+#imgs2 img {
+    margin: 0 5%;
+}
+
+/* Image dinosaure */
+#imgs2>img#din {
+    max-height: 20%;
+    max-width: 20%;
+}
+
+/* image python */
+#imgs2>img#py {
+    height: 20%;
+    width: 20%;
+    padding-right: 3%;
+}
+/* Signe "+" entre les images */
+#imgs2 span {
+    font-size: 700%;
+    font-family: 'bitwise';
+    margin-top: 7%;
+    height: fit-content;
+
+    
+}
+
+/* ---- divider (entre section 2 and 3) ---- */
+#divider2 {
+    margin-bottom: -5%;
+}
+
+
+/* ------- SECTION 3 (composants) --------- */
+#corps3 {
+    padding-top: 3%;
+    font-family: 'Gameplay';
+    text-align: center;
+
+    background-color: #F3F3F3;
+
+}
+
+/* Titre section */
+#corps3 h1 {
+    font-size: 3em;
+}
+
+/* lien vers qui sommes nous */
+#corps3 a {
+    text-decoration: none;
+    color: #007F36;
+    padding-bottom: 0.6%;
+    transition: 100ms;
+    
+}
+/* animation lien */
+#corps3 a:hover {
+    color: #7DD856;
+    border-bottom: 3px solid #7DD856;
+    padding-bottom: 0.2%;
+}
+
+/* Diviseur (between title and game section) */
+.divider {
+  position: relative;
+  margin-top: 90px;
+  height: 1px;
+}
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+.div-arrow-down:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-bottom: 1px solid rgb(48,49,51);
+  border-right: 1px solid rgb(48,49,51);
+}
+
+/* ----- GAME SECTION (composant jeu) ----- */
+/* div des images */
+#imglib {
+    display: flex;
+    justify-content: center;
+}
+
+/* image tkinter */
+#imgtk {
+    width: 23%;
+    margin: 2% 2% 2%;
+    box-shadow: 0 0 5em #3877AC;
+}
+#imgtk img {
+    width: 100%;
+    height: 100%;
+} 
+
+/* image PyGame */
+#imgpyg {
+    width: 40%;
+    margin: 2%;
+    box-shadow: 0 0 5em #0DAD9E;
+}
+#imgpyg img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----- SITE SECTION (composant site) ----- */
+#imgcomp1 {
+    width: 10%;
+}
+
+#imgcomp2 img {
+    width: 40%;
+    margin: 0 0 0 20%;
+}
+
+
+
+/* --------------- DOWNLOAD (TELECHARGEMENT) --------------- */
+#corp1 {
+    font-family: gameplay;
+    margin: 5%;
+
+    display: flex;
+
+}
+
+/* boutons de téléchargement */
+#corp1 button {
+    padding: 1%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    background-color:#22313F;
+    border-radius: 10px 10px 10px;
+    border: none;
+    box-shadow: #538f3a 0px 7px 0px;
+}
+
+
+#corp1 button a{
+    text-decoration: none;
+    color: #7DD856;
+    font-family: 'gamer';
+    font-size: 4em;
+    transition: 100ms;
+}
+
+#corp1 button:hover a {
+    transition: 100ms;
+    animation: cligno alternate-reverse infinite 350ms;
+}
+
+#corp1 button:active {
+    transition: 30ms;
+    transform: translateY(5px);
+    box-shadow: #538f3a 0px 2px 0px;
+}
+
+/* ----- DIV GAUCHE ( page de téléchargement ) ----- */
+#down {
+    width: 70%;
+    text-align: center;
+    border-right:#131921 solid 5px;
+    padding-right: 1%;
+}
+
+#down h1 {
+    font-size: 2.5em;
+}
+
+span#d {
+    font-size: 100%;
+    font-family: 'gameplay';
+    color: green;
+
+}
+
+/* ----- BOUTON DE TELECHARGEMENT ----- */
+#dlbutton button {
+    padding: 2%;
+    background-color: #131921;
+    border-radius: 10px 10px 10px;
+    border: none;
+    box-shadow: #538f3a 0px 10px 0px;
+}
+
+#dlbutton button a {
+    text-decoration: none;
+    color: #7DD856;
+    font-family: 'gamer';
+    font-size: 4em;
+    transition: 100ms;
+}
+
+#dlbutton button:hover a {
+    text-shadow: 0px 0px 10px #247900;
+}
+
+#dlbutton button:active  {
+    transition: 30ms;
+    transform: translateY(5px);
+    box-shadow: #538f3a 0px 5px 0px;
+}
+
+/*
+@keyframes spliddle {
+    10% {
+        padding: 2.5%;
+    }
+    30% {
+        padding: 3%;
+    }
+    75% {
+        padding: 5%;
+    }
+    100% {
+        padding: 4%;
+    }
+}
+*/
+
+
+/* ------- DIV DROITE (INSTRUCTION) ------- */
+#instru {
+    margin: 1%;
+    padding: 1%;
+    background-color: #131921;
+    color: whitesmoke;
+    border: solid 1px black;
+    border-radius: 10px 10px 10px;
+    font-size: 1.2em;
+
+    text-align: center;
+}
+
+#pysite {
+    color: #7DD856;
+    padding-bottom: 0.6%;
+}
+
+#pysite:hover {
+    color: #7DD856;
+    border-bottom: 3px solid #7DD856;
+    padding-bottom: 0.2%;
+}
+
+
+/* --------------- ABOUT US (INFORMATIONS) --------------- */
+#body2 {
+    font-family: gameplay;
+    text-align: center;
+    
+}
+
+.dark-blue{
+    background-color:#22313f;
+}
+
+#body2>h1 {
+    padding: 15% 0 7%;
+    font-size: 2.6em;
+    animation: fadein normal 1s;
+    /*animation: updown alternate-reverse infinite 1s;*/
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        padding: 12% 0 10%;
+    }
+    to {
+        opacity: 1;
+        padding: 15% 0 7%;
+    }
+}
+ /* Up and down moves for title 
+@keyframes updown {
+    from {
+        padding: 13% 0 9%;
+    }
+    to {
+        padding: 15% 0 7%;
+    }
+}
+*/
+
+strong {
+    font-style: italic;
+}
+
+/* ------- Scroll down button ------- */
+.scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+  
+.scroll-down {
+    position: absolute;
+    right: 47.45%;
+    margin-left: -16px;
+    display: block;
+    width: 5%;
+    height: 10%;
+    border: 2px solid rgb(0, 0, 0);
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 1s infinite 1s;
+    animation: bounce 1s infinite 1s;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+  
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid rgb(0, 0, 0);
+    border-width: 0px 0 2px 2px;
+}
+  
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+
+/* --------- About | Yassine --------- */
+#yass {
+    text-align: center;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    resize: vertical;
+    overflow: hidden;
+
+    background-color: #22313f;
+    color: antiquewhite;
+
+    padding: 3%; 
+}
+
+/* Case de description */
+#yass>div {
+    flex-basis: 30%;
+    height: fit-content;
+    word-wrap: normal;
+
+    border: outset 5px;
+    border-radius: 100px 100px 100px;
+    box-shadow: blanchedalmond 0 0 10px;
+
+}
+
+.title {
+    margin: 3%;
+}
+
+span {
+    font-family: 'bitwise';
+    font-size: 60%;
+    line-height: 0.2em;
+}
+
+/* Fenêtre */
+#yass>iframe {
+    width: 100%;
+    margin: 1%;
+    height: 30em;
+}
+
+/* ------- Divider ------- */
+#divd {
+    background-color: #22313F;
+}
+
+#divider {
+    height:3px;
+    width: 80%;
+    background: #22313F;
+    background: linear-gradient(90deg, #22313F, #F3F3F3, #22313F);
+
+    margin: 0 auto;
+}
+
+/* --------- About | Tortue --------- */
+#turtle {
+    text-align: center;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    resize: vertical;
+    overflow: hidden;
+
+    background-color: #22313f;
+    color: antiquewhite;
+
+    padding: 3%; 
+}
+
+/* Case de description */
+#turtle>div {
+    flex-basis: 30%;
+    height: fit-content;
+    word-wrap: normal;
+
+    border: outset 5px;
+    border-radius: 100px 100px 100px;
+    box-shadow: blanchedalmond 0 0 10px;
+
+}
+
+/* Fenêtre */
+#turtle>iframe {
+    width: 100%;
+    margin: 1%;
+    height: 30em;
+}
+
+
+
+/* --------------- UPDATE (AVANCEE DANS LE PROJET) --------------- */
+#followupd {
+    font-family: "gameplay";
+    padding: 2.5%;
+}
+
+#followupd h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#followupd h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#followupd li {
+    line-height: 2;
+}
+
+#followupd a {
+    text-decoration: none;
+    color: #007F36;
+    padding-bottom: 0.6%;
+    transition: 100ms;
+    
+}
+/* animation lien */
+#followupd a:hover {
+    color: #7DD856;
+    border-bottom: 3px solid #7DD856;
+    padding-bottom: 0.2%;
+}
+
+/* divider (entre mise à jour) */
+#dividerup {
+    height: 5px;
+    border-bottom: dotted #131921;
+}
+
+/* Mise à jour (update 1) */
+#update1 {
+    padding: 2%;
+}
+
+

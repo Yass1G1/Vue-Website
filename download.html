@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/styles_laptop.css">
+    <link rel="stylesheet" media="all and (max-width: 480px)" href="CSS/styles_mobile.css">
+    <link rel="icon" type="image/x-icon" href="Flav/DinoGame_Flav.svg">
+    <title>DinoGame Project</title>
+</head>
+    <body>
+        <div id="app" >
+
+            <!-- PARTIE SUPERIEURE -->
+            <div id="topbar">
+                <header>
+                    <div id="boximg">
+                        <a href="index.html">
+                            <img src="img/logo_dino_game_white.png" alt= "logo" id="mainlogo">
+                        </a>
+                    </div>
+                        
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" >{{ titles[0] }} </a></li>
+                            <li><a href="download.html" id="active"> {{ title[1] }} </a></li>
+                            <li><a href="about.html"> {{ titles[2] }} </a></li>
+                            <li><a href="update.html"> {{ titles[3] }} </a></li>
+                        </ul>
+                    </nav>
+
+                    <button id="langbutton" @click="langchange" >{{ lang }}</button>
+
+                </header>   
+
+            </div>
+
+            <div id="corp1">
+                <div id="down">
+                    <h1>{{ titre_d_1 }}</h1>
+                    <p><span id="d">{{ para_d_1 }}</span></p>
+                    <br>
+                    <div id="dlbutton">
+                        <button @click="dlchange"><a href="img/soon_pic.png" download>{{ thx }}</a></button>
+                    </div>
+                </div>
+                <div id="instru">
+                    <h2>{{ titre_d_2 }}</h2>
+                    <ol>
+                        <li style="line-height: 2;">{{ para_d_2[0] }}<a id="pysite" href="https://www.python.org/downloads">{{ para_d_2[1] }}</a>{{para_d_2[2]}}</li>
+                        <li>
+                            <button>
+                                <a href="https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe" download>Windows</a>
+                            </button> 
+                            <button>
+                                <a href="https://www.python.org/ftp/python/3.10.1/python-3.10.1-macos11.pkg" download>MacOS</a>
+                            </button> 
+                            <button>
+                                <a href="https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tgz">Linux</a>
+                            </button>
+                        </li>
+                        <li> {{texte_d_1}} </li>
+                        <br>
+                        <li>{{ texte_d_2 }}</li>
+                    </ol>
+                </div>
+            </div>
+            
+                
+            
+
+            <div id="botbar" style="margin-top: 4%;">
+                <footer>
+                    <p>{{ copyrights }} 
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                            <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                        </a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> for dev mode -->
+        <script src="JS/vue.min.js"></script> <!-- version 2.6.4 -->
+        <script src="JS/vues.js"></script>
+    </body>
+</html>

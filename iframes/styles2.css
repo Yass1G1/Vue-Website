@@ -1,0 +1,284 @@
+/* mise en place des polices */
+@font-face {
+    font-family: 'sinkin-sans-light';
+    src: url("Fonts/sinkin-sans/SinkinSans-300Light.otf") format('opentype'),
+         url('Fonts/SinkinSans-300Light-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'sinkin-sans-reg';
+    src: url('Fonts/sinkin-sans/SinkinSans-500Medium.otf') format('opentype'),
+         url('Fonts/SinkinSans-500Medium-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'sinkin-sans-bold';
+    src: url("Fonts/sinkin-sans/SinkinSans-700Bold.otf") format('opentype'),
+         url('Fonts/SinkinSans-700Bold-webfont.woff') format('woff');
+}
+
+/* CORPS */
+body {
+    font-family: sinkin-sans-light;
+    background-color: rgb(255, 248, 232);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* TITRES IMPORTANTS */
+h2>strong {
+    font-family: sinkin-sans-bold;
+    font-size: x-large;
+}
+/* PARAGRAPHES IMPORTANTS */
+p>strong {
+    font-family: sinkin-sans-reg;
+    color: gray;
+    font-size: large;
+}
+
+/* ICONES CORPS CV */
+div.icones>img {
+    float: left;
+    width: 45px;
+    margin-right: 10px;
+}
+
+/* ------------ TITRE DROPDOWN ------------ */
+
+/* Diplomes */
+.titledrop #drop-1 {
+    display: none;
+}
+
+.titledrop:hover #drop-1 {
+    transition: 1s;
+    display: block;
+}
+
+/* ------ Experience ------ */
+.titledrop #drop-2 {
+    display: none;
+}
+
+.titledrop:hover #drop-2 {
+    transition: 1s;
+    display: block;
+}
+
+/* ------ Compétences ------ */
+.titledrop #drop-3 {
+    display: none;
+}
+
+.titledrop:hover #drop-3 {
+    transition: 1s;
+    display: block;
+}
+
+/* ------ Activités ------ */
+.titledrop #drop-4 {
+    display: none;
+}
+
+.titledrop:hover #drop-4 {
+    transition: 1s;
+    display: block;
+}
+
+/* LIEUX DIPLOMES EXPERIENCES */
+span { 
+    font-family: sinkin-sans-reg;
+    font-size: large
+}
+
+/* ESPACEMENT DES LIGNES */
+.txthgt {
+    line-height: 0.4;
+}
+
+/* ------------ PARTIE SUPERIEURE ------------ */
+#topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    transition: 1s;
+
+    border-radius: 10px 10px 10px;
+    background-color: rgb(116, 154, 214);
+
+    min-width: 50%;
+    width: 100%;
+    
+    position: relative
+}
+
+/* ----- Nom ----- */
+.nom {
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* ----- Photo ----- */
+.photo {
+    padding: 10px 10px;
+    border-radius: 10px 10px 10px;
+    background-color: rgb(83, 108, 176);
+    margin: 7px;
+    box-shadow: black 1px 1px 5px;
+}
+
+/* ------- Cadre : Contact ------- */
+.contact {
+    margin: 1px;
+    padding: 10px 10px;
+    border-radius: 10px 10px 10px;
+    background-color: rgb(83, 108, 176);
+    box-shadow: black 1px 1px 5px;
+
+    margin: 7px;
+    position: absolute;
+    right: 0;
+
+    color: white;
+}
+
+/* ------- Liens : contact ------- */
+ul#list1 li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 200ms;
+}
+
+ul#list1 li a:hover {
+    text-shadow: 0px 0px 2px white;
+    transition: 200ms;
+}
+
+ul#list1 li a:active { color: black; }
+
+/* ----- Contact : adresse ----- */
+ul#list1 li#house {
+    margin: 0;
+	padding: 5px 0 0 30px;
+	list-style: none;
+	background-image: url('Icons/maison.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px;
+}
+/* ----- Contact : téléphone ----- */
+ul#list1 li#phone {
+    margin: 0;
+	padding: 5px 0 0 30px;
+	list-style: none;
+	background-image: url('Icons/phone.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px;
+}
+/* ----- Contact : email ----- */
+ul#list1 li#mail {
+    margin: 0;
+	padding: 5px 0 5px 30px;
+	list-style: none;
+	background-image: url('Icons/mail.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px;
+}
+
+
+/* -------------------- DIPLOME -------------------- */
+#diploma p {
+    font-family: sinkin-sans-light;
+    font-weight: 300;
+    font-size: medium;
+}
+
+@keyframes under {
+    from {
+        border-bottom: 1px brown solid;
+    }
+    to {
+        border-bottom: 3px brown solid;
+    }
+}
+
+p strong a {
+    text-decoration: none;
+    color: brown;
+    transition: 100ms;
+}
+
+p strong a:hover {
+    animation: under 100ms;
+    border-bottom: 2px brown solid;
+}
+
+p strong a:active {
+    color: black;
+}
+
+p strong a:visited {
+    color: brown;
+}
+
+/* -------------------- EXPERIENCES -------------------- */
+#xp p {
+    font-family: sinkin-sans-light;
+    font-weight: 300;
+    font-size: medium;
+}
+
+/* -------------------- COMPETENCES -------------------- */
+#skills li {
+    /* icons */
+    margin: 0;
+	padding: 5px 10px 5px 50px;
+	list-style: none;
+	background-image: url('Icons/arrow.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px;
+}
+
+@keyframes under {
+    from {
+        border-bottom: 1px brown solid;
+    }
+    to {
+        border-bottom: 3px brown solid;
+    }
+}
+
+#skills li a {
+    text-decoration: none;
+    color: brown;
+    transition: 100ms;
+}
+
+#skills li a:hover {
+    animation: under 100ms;
+    border-bottom: 2px brown solid;
+}
+
+#skills li a:active {
+    color: black;
+}
+
+#skills li a:visited {
+    color: brown;
+}
+
+/* -------------------- ACTIVITES -------------------- */
+#hobbys li {
+    /* icons */
+    margin: 0;
+	padding: 5px 10px 5px 50px;
+	list-style: none;
+	background-image: url('Icons/arrow.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px;
+}
+
+#hobbys li>strong { font-family: sinkin-sans-reg; }

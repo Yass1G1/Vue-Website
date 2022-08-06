@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/styles_laptop.css">
+    <link rel="stylesheet" media="all and (max-width: 480px)" href="CSS/styles_mobile.css">
+    <link rel="icon" type="image/x-icon" href="Flav/DinoGame_Flav.svg">
+    <title>DinoGame Project</title>
+</head>
+    <body>
+        <div id="app" >
+
+            <!-- PARTIE SUPERIEURE -->
+            <div id="topbar">
+                <header>
+                    <div id="boximg">
+                        <a href="index.html">
+                            <img src="img/logo_dino_game_white.png" alt="logo" id="mainlogo">
+                        </a>
+                    </div>
+                        
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" >{{ titles[0] }} </a></li>
+                            <li><a href="download.html"> {{ titles[1] }} </a></li>
+                            <li><a href="about.html" id="active"> {{ titles[2] }} </a></li>
+                            <li><a href="update.html" > {{ titles[3] }} </a></li>
+                        </ul>
+                    </nav>
+
+                    <button id="langbutton" @click="langchange" >{{ lang }}</button>
+
+                </header>   
+                
+            <div id="body2">
+                <h1>{{titre_us_1}}</h1>
+                <a href="#yass" class="scroll-down" address="true"></a>
+                <!-- Scroll down button -->
+                <div class="row">
+                    <div>
+                        <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep12" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+                            <polygon class="" style="fill: #22313f;" points="-4,24 800,198 1604,24 1604,204 -4,204 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill: #7DD856;" points="-4,0 800,198 1604,0 1604,11.833 800,198 -4,12 "></polygon> 
+                            <polygon class="" style="opacity: 1;fill:#008037;" points="-4,12 -4,24 800,198 1604,24 1604,11.833 800,198 "></polygon>
+                        </svg>
+                    </div>
+                </div>
+
+                <div id="turtle">
+                    <div class="title">
+                        <h1>J<br> "<strong>T0rtue</strong> " <br> 
+                        <span>{{texte_ju_1[0]}} <br> {{texte_ju_1[1]}} </span></h1>
+                    </div>
+                    <iframe src="img/cv-generique.jpg" frameborder="1"></iframe>
+                    <br>
+                </div>
+                
+
+                <div id="divd">
+                    <div id="divider"></div>
+                </div>
+                
+                <div id="yass">
+                    <div class="title">
+                        <h1>Yassine<br> "<strong>Yass</strong> " <br> Chouiti <br>
+                        <span>{{texte_ya_1[0]}} <br> {{texte_ya_1[1]}}</span></h1>
+                    </div>
+                    <iframe id="iframeyass" src="iframes/indexx.html" frameborder="1"></iframe>
+                    <br>
+                </div>  
+                
+
+            </div>
+            
+            <div id="botbar">
+                <footer>
+                    <p>{{ copyrights }} 
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                            <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                        </a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+           <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> for dev mode -->
+            <script src="JS/vue.min.js"></script> <!-- version 2.6.4 -->
+            <script src="JS/vues.js"></script>
+        </div>
+    </body>
+</html>

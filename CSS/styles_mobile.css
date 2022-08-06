@@ -1,0 +1,13 @@
+
+/* -------------------- PARTIE SUPERIEUR (TOP BAR) -------------------- */
+#topbar {
+    width: max-content;
+    height: 7em;
+    background-color: rgb(226, 225, 225);
+    color: black;
+    font-size: 3%;
+}
+
+#mainlogo {
+    height: inherit;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/styles_laptop.css">
+    <link rel="stylesheet" media="all and (max-width: 480px)" href="CSS/styles_mobile.css">
+    <link rel="icon" type="image/x-icon" href="Flav/DinoGame_Flav.svg">
+    <title>DinoGame Project</title>
+</head>
+    <body>
+        <div id="app">
+
+            <!-- PARTIE SUPERIEURE -->
+            <div id="topbar">
+                <header>
+                    <div id="boximg">
+                        <a href="index.html">
+                            <img src="img/logo_dino_game_white.png" alt="logo" id="mainlogo">
+                        </a>
+                    </div>
+                        
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" id="active">{{ titles[0] }} </a></li>
+                            <li><a href="download.html"> {{ titles[1] }} </a></li>
+                            <li><a href="about.html"> {{ titles[2] }} </a></li>
+                            <li><a href="update.html"> {{ titles[3] }} </a></li>
+                        </ul>
+                    </nav>
+
+                    <button id="langbutton" @click="langchange" >{{ lang }}</button>
+
+                </header>   
+            </div>
+
+            <div id="corps1">
+                <div id="section1" >
+                    <div id="article1">
+                        <h1>{{titre_i_1}}</h1>
+                        <p>{{para_i_1}}</p>
+                    </div>
+
+                    <div id="imgdino1">
+                        <img src="img/dino_game_figurine.png" alt="figurine picture">
+                    </div>
+                </div>
+            </div>
+
+            <!--- <hr class="rounded"> -->
+            <div class="row dark-blue">
+                <div id="divider1">
+                  <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep11" viewBox="0 0 1600 100" style="display: block;" data-height="100">
+                    <polygon class="" style="fill: rgb(34, 49, 63);" points="-40,63.667 19.833,3.833 80,64 140,4 200,64 260,4 320,64 380,4 440,64 500,4 560,64 620,4 680,64 740,4 800,64 860,4 920,64 980,4 1040,64 1100,4 1160,64 1220,4 1280.333,64.333 1340.333,4.333 1400,64 1460,4 1520,64 1578,6 1636,64 1636,104 -40,104 "></polygon> 
+                    <polygon class="" style="opacity: 1;fill: #7DD856;" points="-40,86 20,26 80,86 140,26 200,76 260,4 200,64 140,4 80,64 19.833,3.833 -40,63.667 "></polygon> 
+                    <polygon class="" style="opacity: 1;fill: #7DD856;" points="1159,69 1220,8 1281,73 1340,14 1399,73 1460,12 1521,73 1578,16 1634,72 1636,73.333 1636,64 1578,6 1520,64 1460,4 1400,64 1340.333,4.333 1280.333,64.333 1220,4 1160,64 1100,4 1040,64 1100,10 "></polygon></svg>
+                </div>
+            </div>   
+
+            <div id="corps2">
+                <div id="section2" >
+                    <div id="imgs2">
+                        <img src="img/dino_ill.jpg" alt="mascotte du jeu" id="din">
+                        <span>+</span>
+                        <img src="img/logo_py-.png" alt="logo de python" id="py">
+                    </div>
+                    <div id="article2">
+                        <h1>{{titre_i_2}}</h1>
+                        <p>{{para_i_2}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row dark-blue">
+                <div id="divider2">
+                  <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep11" viewBox="0 0 1600 100" style="display: block;" data-height="100">
+                    <polygon class="" style="fill: #F2F2F2;" points="-40,63.667 19.833,3.833 80,64 140,4 200,64 260,4 320,64 380,4 440,64 500,4 560,64 620,4 680,64 740,4 800,64 860,4 920,64 980,4 1040,64 1100,4 1160,64 1220,4 1280.333,64.333 1340.333,4.333 1400,64 1460,4 1520,64 1578,6 1636,64 1636,104 -40,104 "></polygon> 
+                    <polygon class="" style="opacity: 1;fill: #7DD856;" points="-40,86 20,26 80,86 140,26 200,76 260,4 200,64 140,4 80,64 19.833,3.833 -40,63.667 "></polygon> 
+                    <polygon class="" style="opacity: 1;fill: #7DD856;" points="1159,69 1220,8 1281,73 1340,14 1399,73 1460,12 1521,73 1578,16 1634,72 1636,73.333 1636,64 1578,6 1520,64 1460,4 1400,64 1340.333,4.333 1280.333,64.333 1220,4 1160,64 1100,4 1040,64 1100,10 "></polygon></svg>
+                </div>
+            </div>  
+
+
+            <div id="corps3">
+                <div id="section3">
+                    <div id="start1">
+                        <h1>{{titre_i_3}}</h1>
+                        <p>{{ para_i_3[0] }}<a href="about.html"> {{ titles[2] }} </a> {{ para_i_3[1] }}</p>
+                    </div>
+
+                    <div class="divider div-transparent div-arrow-down"></div>
+
+                    <div id="gamesec">
+                        <h1>{{titre_i_4}}</h1>
+                        <p style="margin: 0 5% 0;">{{ para_i_4[0] }}<a href="https://info.blaisepascal.fr/les-bibliotheques-python">{{ para_i_4[1] }}</a>{{ para_i_4[2] }}</p>
+                        <div id="imglib">
+                            <div id="imgtk">
+                                <img src="img/logo_tk.jpg" alt="logo tkinter">
+                            </div>
+                            <div id="imgpyg">
+                                <img src="img/logo_pygame.png" alt="logo pygame">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div id="divd" style="background-color: #F3F3F3;">
+                        <div id="divider" style="background: #F3F3F3 linear-gradient(90deg, #F3F3F3, #22313F, #F3F3F3);"></div>
+                    </div>
+
+                    <div id="sitesec">
+                        <h1>{{titre_i_5}}</h1>
+                        <p>{{para_i_5}}</p>
+                        <div id="imglib">
+                            <div id="imgcomp1">
+                                <img src="img/logo_htmlcssjs.png" alt="logo HTML CSS JS">
+                            </div>
+                            <div id="imgcomp2">
+                                <img src="img/logo_vue.png" alt="logo pygame">
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            
+            
+            <div id="botbar">
+                <footer>
+                    <p>{{ copyrights }} 
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                            <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                        </a>
+                    </p>
+                    
+                </footer>
+                
+            </div>
+            
+            
+        </div>
+        
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> for dev mode -->
+        <script src="JS/vue.min.js"></script> <!-- version 2.6.4 -->
+        <script src="JS/vues.js"></script>
+    </body>
+</html>
