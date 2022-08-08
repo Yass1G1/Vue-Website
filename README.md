@@ -1,5 +1,5 @@
 ## Vue Website
-This is a Website that **I** made in HTML5, CSS3 and Vue.js framework used in a Computer Science Class project.
+This is a Complete website made by **me (only)** in HTML5, CSS3 and Vue.js framework used in a Computer Science Class project.
 Vue is used in this website just to improve the ergonomics of the site, by making easier for the user to change the language (EN -> FR or FR -> EN without reloading).
 
 **It isn't an Vue app, it's a normal website that use Vue (so don't run in with npm run serve)**
